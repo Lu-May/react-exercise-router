@@ -3,6 +3,7 @@ import '../styles/App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Home from './Home';
 import Profile from './Profile';
+import About from './About'
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="app">
         <Home />
         <Profile />
+        <About />
       </div>
     );
   }
