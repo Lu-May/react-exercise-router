@@ -9,6 +9,7 @@ import Home from "./Home";
 import Profile from "./Profile";
 import About from "./About";
 import Header from "./Header";
+import Products from "./Products"
 import "bootstrap/dist/css/bootstrap.css";
 
 class App extends Component {
@@ -17,9 +18,9 @@ class App extends Component {
       <BrowserRouter>
         <Header />
         <switch>
-          <Route path="/" Component={Home} />
-          <Route path="/about" Component={About} />
-          <Route path="/profile" Component={Profile} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/about" component={About} />
         </switch>
       </BrowserRouter>
     );

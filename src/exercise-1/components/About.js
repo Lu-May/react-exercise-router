@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import "../styles/App.css"
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <p>Company:ThoughtWorks Local</p>
       <p>Location:Xi'an</p>
       <p>For more information,please</p>
-      <p>view our <Link to="/" className="nav-link">website</Link></p>
+      <p >view our <Link to="/" className="textLink">website</Link>.</p>
     </Fragment>
   );
 };
