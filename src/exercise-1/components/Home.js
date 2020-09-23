@@ -1,12 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-const Home = (props) => {
-  console.log(props);
+const Home = () => {
   return (
-    <section>
+    <Fragment>
       <p>This is a beautiful Home Page.</p>
       <p>And the url is '/'.</p>
-    </section>
+    </Fragment>
   );
 };
 

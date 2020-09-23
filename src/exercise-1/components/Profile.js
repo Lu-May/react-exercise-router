@@ -1,14 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-const Profile = (props) => {
-  console.log(props);
+const Profile = () => {
   return (
-    <section>
+    <Fragment>
       <p>Username:XXX</p>
       <p>Gender:Female</p>
       <p>Work:IT Industry</p>
       <p>Website:'/my-profile'</p>
-    </section>
+    </Fragment>
   );
 };
 
