@@ -1,15 +1,20 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './Products.css'
 
-const Products = () => {
-  return (
-    <Fragment>
-      <p>All Products:</p>
-      <Link></Link>
-      <p>For more information,please</p>
-      <p>view our <Link to="/" className="nav-link">website</Link></p>
-    </Fragment>
-  );
-};
+class Prosucts extends Component {
+  render() {
+    return (
+      <section className="products">
+        <h3>All Products:</h3>
+        <ul>
+          <li><Link className="link" to="product/1">Bicycle</Link></li>
+          <li><Link className="link" to="product/2">TV</Link></li>
+          <li><Link className="link" to="product/3">Pencil</Link></li>
+        </ul>
+      </section>
+    );
+  }
+}
 
-export default Products;
+export default Prosucts;

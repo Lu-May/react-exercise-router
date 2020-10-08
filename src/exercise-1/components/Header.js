@@ -17,6 +17,18 @@ const Header = () => {
           Home
         </NavLink>
       </Link>
+      <Link to="/products" className="webLink">
+        <NavLink
+          exact
+          className="webLink"
+          to="/products"
+          activeStyle={{
+            textDecoration: "underline",
+          }}
+        >
+          Products
+        </NavLink>
+      </Link>
       <Link to="/profile" className="webLink">
         <NavLink
           exact
