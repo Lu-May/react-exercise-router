@@ -24,9 +24,8 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/product/:id" component={Product} />
-          {/* <Redirect from="/goods" to="/products"></Redirect> */}
+          <Route exact path="/goods" component="/products"></Route>
           <Route exact path="/" component={Home} />
-          {/* <Redirect form="/:any(.*)" to="/"></Redirect> */}
         </switch>
       </BrowserRouter>
     );
